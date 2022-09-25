@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* 共通部分 */
+html{
+ font-size: 100%;    
+}
+a{
+ text-decoration: none;    
+}
+img{
+ max-width: 100%;    
+}
+li{
+ list-style: none;    
+}
+
+/* header */
+#header{
+ background-image: url(../images/main.png);
+ background-position: center top;
+ background-repeat: no-repeat;
+ background-size:contain;
+ height: 100vh;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.site-title-a { 
+  line-height: 1px;
+  width: 130px;
+ height: 55px;
+ padding: 20px 0 0 70px;
+}
+nav ul{ 
+  display: flex;
+  justify-content:flex-end;
+  margin-top: -30px;
+  padding: 0 10px 0 10px;
+ }  
+ .site-title-b{ 
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  right: 38%;
+  font-size: 28px;
+ }
+
+nav li a {
+ color: black;
+ transition: all  0.3s ease;
+}
+.site-title{  
+ position: absolute;
+ top: 50%;
+ left: 38%;
+ right: 38%;
+ font-size: 28px;
+}
+
+/*お知らせ*/
+.sec-top{
+ text-align: center;    
+ margin: 60px auto 60px auto;
+}
+.menu{
+ width: 80%;
+ margin: 0 auto;
+}
+.day ul{
+ display: flex;  
+ justify-content:left;
+ border-bottom: 1px solid black;   
+}
+.day ul li{
+ margin: 10px ;    
+}
+.shikaku{
+ border: 1px solid black;
+ width: 70px;
+ height: 20px;
+ text-align: center;
+ font-size: 12px;
+ }
+ .text{
+  padding-bottom: 20px;
+ }
+ /* 施工事例 */
+.section-title{
+ display: inline-block;
+ text-align: center;
+ margin-bottom: 60px;
+}
+.cotent-title{
+ font-size: 1rem; 
+ margin: 10px 0;  
+}
+.wrapper{
+ max-width: 960px;
+ margin: 0 auto 100px auto;
+ padding: 0 4%;
+ text-align: center;  
+}
+#section ul{
+ display: flex;
+ justify-content: space-between;  
+}
+#section li{
+ width: 48%;  
+}
+/*施工実績一覧*/
+.company-img{
+ display: inline-block;
+ text-align: center;
+ width: 200px;
+ border: solid 1px black;
+ margin-left: auto;
+ margin-right: auto;
+}
+.company-i{
+ text-align: center;  
+}
+#company ul{
+ display: flex;
+}
+#company li{
+ width: calc(100%/3);
+}
+#company li img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ vertical-align: bottom;
+}
+
+/*  */
+
+ .footer-logo{ 
+  background-color: black;
+  color: white;   
+  display: flex;
+  padding: 50px;
+ }
+ .img-footer img{
+  width: 60%;
+  height: 55px;  
+  margin-left: 100px; 
+ }
+ .company-p a{
+  color: white; 
+ }
+ .company-p ul{
+  font-size: 14px;
+  display: flex;  
+ }
+ .company-p ul li{
+  margin: 0 20px; 
+}
+
+ #footer{
+  background-color: black;
+  text-align: center;
+  font-size: 11px;  
+  color: white; 
+  padding: 18px;
+ }
+ .company-p ul li{
+  margin-bottom: 10px;
+ }
+
+@media screen and (max-width:800px){
+#header{
+ margin-bottom: -250px;  
+}
+.site-title-b{
+ font-size: 18px;
+ margin-top: -55px; 
+}
+.footer-logo{
+  display: block;
+  text-align: center;
+ }
+ .company-p ul{
+  display: block;
+ }
+.img-footer{ 
+  margin-bottom: -200px;
+  margin-top: 150px;
+  }
+.company-p ul{
+   margin-bottom: 90px; 
+}
+.company-p ul li{
+  margin-bottom: 10px;
+ }
+.img-footer{ 
+ width: 50%;
+ margin: 200px auto -200px auto;
+ text-align: center;
+}
+} 
+  
+@media screen and (max-width:600px){
+#header{
+ margin-bottom: -380px;  
+}
+.site-title-b{
+ margin-top: -80px; 
+}
+#section ul{
+ display: block;  
+}
+#section li{
+ width: 100%;
+ margin-bottom: 30px;  
+}
+#company ul{
+  display: block;  
+ }
+ #company li{
+  width: 100%;
+  margin-bottom: 30px;  
+ }
+ .footer-logo{
+  display: block;
+  text-align: center;
+ }
+ .company-p ul{
+  display: block;
+ }
+ .company-p ul li{
+  margin-bottom: 10px;
+ }
+ .img-footer{ 
+  width: 50%;
+  margin: 200px auto -200px auto;
+  text-align: center;
+  }
+  .company-p ul{
+   margin-bottom: 90px;
+  }
+}
